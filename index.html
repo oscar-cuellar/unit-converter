@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit Converter</title>
+    <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
-    
+    <section name="card longitud">
+      <div class="container">
+        <h2>Longitud</h2>
+        <h3>Quiero convertir:</h3>
+        <input><br>
+        <select name="select option" class="form-control mini-from" onchange="execute_length(true);">
+          <option disabled="disabled">&nbsp;</option>
+          <option disabled="disabled" class="title">Métrico</option>
+          <option value="0.001|0|km">Kilómetro (km)</option>
+          <option value="1|0|m">Metro (m)</option>
+          <option value="10|0|dm">Decímetro (dm)</option>
+          <option value="100|0|cm">Centímetro (cm)</option>
+          <option value="1000|0|mm">Milímetro (mm)</option>
+          <option value="1e6|0|µm">Micrómetro (µm)</option>
+          <option value="1e9|0|nm">Nanómetro (nm)</option>
+          <option value="1e10|0|Å">Angstrom (Å)</option>
+          <option disabled="disabled">&nbsp;</option>
+        </select><br>
+        <h3>A:</h3>
+        <select name="select option" class="form-control mini-from" onchange="execute_length(true);">
+          <option disabled="disabled">&nbsp;</option>
+          <option disabled="disabled" class="title">Métrico</option>
+          <option value="0.001|0|km">Kilómetro (km)</option>
+          <option value="1|0|m">Metro (m)</option>
+          <option value="10|0|dm">Decímetro (dm)</option>
+          <option value="100|0|cm">Centímetro (cm)</option>
+          <option value="1000|0|mm">Milímetro (mm)</option>
+          <option value="1e6|0|µm">Micrómetro (µm)</option>
+          <option value="1e9|0|nm">Nanómetro (nm)</option>
+          <option value="1e10|0|Å">Angstrom (Å)</option>
+          <option disabled="disabled">&nbsp;</option>
+        </select><br>
+        <div class="result_container mini_result_container">
+          <div style="float: left"><a href="#" onclick="converterChange('length', true); execute_length(false); return false;"><span class="change" title="Cambiar Conversion" style="display:inline-block;vertical-align:middle"></span></a></div>
+          <div class="result" id="div_length">-</div>
+        </div>
+      </div>
+    </section>
+    <script src="src/js/main.js"></script>
 </body>
 </html>
