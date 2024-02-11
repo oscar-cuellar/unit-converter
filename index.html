@@ -11,7 +11,7 @@
       <div class="container">
         <h2>Longitud</h2>
         <h3>Quiero convertir:</h3>
-        <input><br>
+        <div><input></div>
         <select name="select option" class="form-control mini-from" onchange="execute_length(true);">
           <option disabled="disabled">&nbsp;</option>
           <option disabled="disabled" class="title">Métrico</option>
@@ -24,7 +24,7 @@
           <option value="1e9|0|nm">Nanómetro (nm)</option>
           <option value="1e10|0|Å">Angstrom (Å)</option>
           <option disabled="disabled">&nbsp;</option>
-        </select><br>
+        </select>
         <h3>A:</h3>
         <select name="select option" class="form-control mini-from" onchange="execute_length(true);">
           <option disabled="disabled">&nbsp;</option>
@@ -38,7 +38,7 @@
           <option value="1e9|0|nm">Nanómetro (nm)</option>
           <option value="1e10|0|Å">Angstrom (Å)</option>
           <option disabled="disabled">&nbsp;</option>
-        </select><br>
+        </select>
         <div class="result_container mini_result_container">
           <div style="float: left"><a href="#" onclick="converterChange('length', true); execute_length(false); return false;"><span class="change" title="Cambiar Conversion" style="display:inline-block;vertical-align:middle"></span></a></div>
           <div class="result" id="div_length">-</div>
