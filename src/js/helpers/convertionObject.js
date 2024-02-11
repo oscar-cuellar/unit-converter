@@ -1,4 +1,4 @@
-import * as L from '../constants/length';
+import * as L from '../constants/length.js';
 
 export const lengthConvertion = {
   [L.MILLIMETERS]: {
