@@ -1,0 +1,16 @@
+.container {
+    width: 216px;
+    height: 276px;
+    margin: 0 39px 24px 0;
+    border: 1px dotted #000;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+    background-color: #fff;
+}
+h2 {
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #ff850d;
+}
