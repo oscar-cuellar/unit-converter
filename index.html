@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit Converter</title>
-    <link rel="stylesheet" href="src/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="src/css/styles.css">
 </head>
+
 <body>
-    <section name="card longitud">
-      <div class="container">
+  <main>
+    <section class="cards">
+      <div class="card longitud">
         <h2>Longitud</h2>
         <h3>Quiero convertir:</h3>
         <div>
@@ -21,12 +24,13 @@
         <select name="select option" class="select">
           <option disabled="disabled" class="title">Métrico</option>
         </select>
-        <div class="result_container mini_result_container">
-          <div style="float: left"><a href="#" onclick="converterChange('length', true); execute_length(false); return false;"><span class="change" title="Cambiar Conversion" style="display:inline-block;vertical-align:middle"></span></a></div>
-          <div class="result" id="div_length">-</div>
+        <div class="result">
+          <div> - </div>
         </div>
       </div>
     </section>
-    <script src="src/js/main.js"></script>
+  </main>
+  <script type="module" src="src/js/main.js"></script>
 </body>
+
 </html>
