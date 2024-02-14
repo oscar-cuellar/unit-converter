@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit Converter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="src/css/styles.css">
 </head>
+
 <body>
-  <script type="module" src="./src/js/main.js"></script>
+  <main>
+    <section class="cards">
+      <div class="card longitud">
+        <h2>Longitud</h2>
+        <div><strong>Quiero convertir:</strong></div>
+        <div>
+          <input>
+        </div>
+        <select name="select option" class="select">
+          <option disabled="disabled" class="title">Métrico</option>
+        </select>
+        <div><strong>A:</strong></div>
+        <select name="select option" class="select">
+          <option disabled="disabled" class="title">Métrico</option>
+        </select>
+        <div>
+          <div> <span class="result">0</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="src/js/main.js"></script>
 </body>
+
 </html>
