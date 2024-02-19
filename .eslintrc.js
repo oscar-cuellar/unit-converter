@@ -3,15 +3,18 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: 'airbnb-base',
+  extends: [
+    'eslint:recommended',
+    'google',
+    'plugin:import/recommended',
+    'plugin:prettier/recommended',
+  ],
   overrides: [
     {
       env: {
         node: true,
       },
-      files: [
-        '.eslintrc.{js,cjs}',
-      ],
+      files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
         sourceType: 'script',
       },
@@ -22,5 +25,6 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    'import/extensions': ['error', 'always'],
   },
 };
