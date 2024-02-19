@@ -19,5 +19,5 @@ export const lengthUnits = [
   {
     id: DECIMETERS,
     name: 'Decímetros',
-  }
+  },
 ];
