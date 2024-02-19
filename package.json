@@ -39,9 +39,6 @@
     ],
     "src/**/*.{json,css,html}": [
       "prettier --write --ignore-unknown"
-    ],
-    "index.html": [
-      "prettier --write --ignore-unknown"
     ]
   }
 }
